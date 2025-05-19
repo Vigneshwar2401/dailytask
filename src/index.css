@@ -1,12 +1,14 @@
 @import "tailwindcss";
 
-
 .bottom_design {
-    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+@theme {
+  --color-btn-applegreen: #00a69a;
 }
 
 @layer {
-    .btn {
-        @apply bg-[#00A69A] h-10 w-30 text-white text-center rounded
-    }
+  .btn {
+    @apply bg-btn-applegreen h-10  text-white text-center rounded cursor-pointer hover:bg-emerald-600 hover:duration-200 not-hover:duration-200;
+  }
 }

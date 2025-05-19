@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import MainSection from './components/MainSection'
 import { BG_IMAGE } from '../assets'
-import Herotext from './components/Herotext'
+
 
 
 function HomePage() {
@@ -11,7 +11,7 @@ function HomePage() {
 
       <div className='z-10 relative h-full w-full'>
         <Navbar />
-        <Herotext />
+       
         <MainSection />
 
 

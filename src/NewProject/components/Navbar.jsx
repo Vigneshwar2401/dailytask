@@ -1,23 +1,23 @@
-import React from 'react'
-import { navLinks } from './Context'
-import { Link } from 'react-router-dom'
-import { AiOutlineBaidu } from 'react-icons/ai'
+import React from "react";
+import { navLinks } from "./Context";
+import { Link } from "react-router-dom";
+import { AiOutlineBaidu } from "react-icons/ai";
 
 function Navbar() {
   return (
-    <div className='h-2/12 w-full flex justify-between p-5 overflow-hidden'>
+    <div className="h-2/12 w-full flex justify-between p-5 overflow-hidden">
       <div>
-        <AiOutlineBaidu className='h-10 w-10 ml-20' />
+        <AiOutlineBaidu className="h-10 w-10 ml-20 text-white" />
       </div>
-      <ul className='flex gap-3 mr-20'>
+      <ul className="flex gap-3 mr-20 ">
         {navLinks.map((nav) => (
-          <li>
+          <li className="hover:text-btn-applegreen text-white font-normal duration-200">
             <Link to={nav.path}>{nav.name}</Link>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
